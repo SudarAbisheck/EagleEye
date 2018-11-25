@@ -5,7 +5,7 @@ import * as errorHandler from "errorhandler";
 import * as express from "express";
 import * as logger from "morgan";
 
-dotenv.config({path: ".env.production"});
+dotenv.config({path: ".env"});
 
 /**
  * Routes
@@ -46,7 +46,7 @@ class App {
          */
         this.express.listen(this.express.get("port"), () => {
             // tslint:disable-next-line:no-console
-            console.log(("  App is running at http://localhost:%d \
+            console.log(("  App is running at http://0.0.0.0:%d \
             in %s mode"), this.express.get("port"), this.express.get("env"));
             // tslint:disable-next-line:no-console
             console.log("  Press CTRL-C to stop\n");

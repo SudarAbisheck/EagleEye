@@ -11,10 +11,6 @@ yarn-error.log*
 # misc
 .DS_Store
 dist
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
 
 npm-debug.log*
 yarn-debug.log*
@@ -70,6 +66,11 @@ typings/
 
 # dotenv environment variables file
 .env
+.env.local
+.env.development.local
+.env.test.local
+.env.production
+.env.production.local
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache

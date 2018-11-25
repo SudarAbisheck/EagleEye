@@ -1,0 +1,13 @@
+version: '3'
+services:
+  ee-web:
+    build: ./web-app
+    depends_on:
+      - ee-api
+    ports:
+      - "80:80"
+
+  ee-api:
+    build: ./api-server
+    ports:
+      - "3000:3000"

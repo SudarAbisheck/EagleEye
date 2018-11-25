@@ -1,8 +1,14 @@
 
 # EagleEye - URL Monitoring Service
 
-
 ### Setting up the Service
+
+```
+docker-compose up -d
+```
+
+
+### Setting up the Service (Without docker-compose)
 ```
 # Create a new bridge network
 docker network create eagle_eye_network
